@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Document</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+
+
+    <div class='alert-box' id='alert'>알림창
+
+        <button onclick = "white_word()">흰색 글자</button>
+        <button onclick = "red_word()">빨간 글자</button>
+        <button onclick = "blue_word()">파란 글자</button>
+        <button onclick = "black_back()">검은 바탕</button>
+        <button onclick = "orange_back()">주황 바탕</button>
+        <button onclick = "document.getElementById('alert').style.display = 'none';">닫기</button>
+    </div>
+
+    <button onclick = "document.getElementById('alert').style.display = 'block';">열기</button>
+    
+    <script>
+        function white_word(){
+            document.getElementById('alert').style.color = 'white';
+        }
+        function red_word(){
+            document.getElementById('alert').style.color = 'red';
+        }
+        function blue_word(){
+            document.getElementById('alert').style.color = 'blue';
+        }
+        function black_back(){
+            document.getElementById('alert').style.backgroundColor = 'black';
+        }
+        function orange_back(){
+            document.getElementById('alert').style.backgroundColor = 'orange';
+        }
+
+
+    </script>
+</body>
+</html>
